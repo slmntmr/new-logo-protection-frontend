@@ -1,18 +1,16 @@
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
-
+import "@/styles/globals.css"; // ✅ Stilleri ekledik
 
 export default function RootLayout({ children }) {
   return (
     <html lang="tr">
-      <body className="app-body"> {/* ✅ Fazladan boşlukları önlemek için class ekledik */}
-        <>
-          <Navbar />
-          <main style={{ minHeight: "80vh", padding: "20px" }}>
-            {children}
-          </main>
-          <Footer />
-        </>
+      <body className="app-body">
+        <Navbar />
+        <main className="container">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
