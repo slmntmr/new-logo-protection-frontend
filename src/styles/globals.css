@@ -1,25 +1,34 @@
-/* 📌 Genel Sayfa Stili */
-body {
-  font-family: "Arial", sans-serif;
-  background-color: #f8f9fa; /* Hafif gri arkaplan */
-  margin: 0;
-  padding: 0;
+/* 📌 Genel Sayfa Yapısı */
+.app-body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  min-height: 100vh; /* Sayfanın tamamını kaplaması için */
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+/* 📌 Ana Layout */
+.layout {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
-/* 📌 Navbar Stili */
+/* 📌 Navbar */
 .navbar {
   width: 100%;
-  background-color: #343a40; /* Koyu gri arkaplan */
+  background-color: #343a40;
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px; /* Navbar yüksekliği */
+  z-index: 1000;
 }
 
 .navbar a {
@@ -34,38 +43,24 @@ body {
 }
 
 /* 📌 İçerik Alanı */
-main {
-  width: 90%;
-  max-width: 800px;
-  background-color: white;
-  padding: 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
-
-/* 📌 Başlık Stili */
-h1 {
-  font-size: 32px;
-  color: #212529;
-  text-align: center;
-}
-
-/* 📌 Bağlantılar */
-a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* İçeriği dikey ortala */
+  align-items: center; /* İçeriği yatay ortala */
+  padding: 100px 20px 80px; /* Navbar ve footer için boşluk bırak */
 }
 
 /* 📌 Footer */
 footer {
-  margin-top: 20px;
-  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-color: #343a40;
   color: white;
   text-align: center;
-  width: 100%;
+  padding: 15px;
+  height: 50px;
 }
