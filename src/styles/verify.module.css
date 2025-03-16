@@ -6,8 +6,9 @@
   align-items: center;
   justify-content: center;
   min-height: 70vh;
+  width: 100%;
   padding: 20px;
-  background-color: #f8f9fa;
+  background-color: #9fc0e2;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }

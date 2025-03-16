@@ -1,0 +1,9 @@
+/* 📌 Logo Listesi Sayfası CSS */
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
