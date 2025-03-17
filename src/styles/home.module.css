@@ -1,0 +1,43 @@
+/* 📌 Ana Sayfa Tasarımı */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  text-align: center;
+  background: linear-gradient(135deg, #f9f9f9, #e3e3e3);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.home-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.home-description {
+  font-size: 18px;
+  color: #444;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.protect-button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 18px;
+  color: white;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.protect-button:hover {
+  background: #0056b3;
+}
