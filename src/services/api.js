@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:8080/api/logos";
+const BASE_URL = "https://logoprotection-backend-1.onrender.com/api/logos";
 
 // 📌 Dosya yükleme fonksiyonu
 export const uploadLogo = async (file) => {

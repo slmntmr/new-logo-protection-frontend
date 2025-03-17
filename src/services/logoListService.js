@@ -1,7 +1,7 @@
 "use client";
 import axios from "axios";
 
-const BACKEND_URL = "http://localhost:8080/api/logos"; // 📌 API adresi
+const BACKEND_URL = "https://logoprotection-backend-1.onrender.com/api/logos"; // 📌 API adresi
 
 // 📌 Tüm logoların isimlerini getirir
 export const fetchLogos = async () => {
